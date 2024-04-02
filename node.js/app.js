@@ -3,13 +3,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
-const AdvertiserRouter = require('./api/routes/Advertiser')
-const ApartmentRouter = require('./api/routes/Apartment')
-const CategoryRouter = require('./api/routes/Category')
-const CityRouter = require('./api/routes/City')
-const ClientRouter = require('./api/routes/Client')
+
 const cors = require('cors');
-const getToDoList = require('./api/requests')
 const connectToDB = require('./api/connectDB')
 
 // const connectToDB = require('./api/connectDB')
@@ -32,22 +27,7 @@ const connectionParams = {
   // ignoreDeprecated: true 
 }
 connectToDB()
-// mongoose.connect
-// (process.env.LOCAL_URI, connectionParams)
-  // .then(() => {
-  //     console.log('connected')
-  // })
-  // .catch((err) => {
-  //     console.log('Error:' + err)
-  // })
 
-// connectToDB()
-// app.get('/todo', getToDoList)
-app.use('/Apartment', ApartmentRouter)
-app.use('/Advertiser',AdvertiserRouter)
-app.use('/Category',CategoryRouter)
-app.use('/City',CityRouter)
-app.use('/Client',ClientRouter)
 
 app.listen(3002, () => {
     console.log(`my app is listening in http//:localhost:3002`);

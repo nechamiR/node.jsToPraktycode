@@ -1,0 +1,63 @@
+[
+    {
+      "cursor": "FRz7sbDuuVFoYmkxaGJsczczZnRmdGRn",
+      "service": {
+        "autoDeploy": "yes",
+        "branch": "main",
+        "createdAt": "2024-03-19T16:09:19.352872Z",
+        "id": "srv-cnsrhbi1hbls73ftftdg",
+        "name": "TodoApi",
+        "notifyOnFail": "default",
+        "ownerId": "usr-cnrjfr8l5elc73b27qq0",
+        "repo": "https://github.com/nechamiR/praktyKod5",
+        "rootDir": "./TodoApi",
+        "serviceDetails": {
+          "buildPlan": "starter",
+          "env": "docker",
+          "envSpecificDetails": {
+            "dockerCommand": "",
+            "dockerContext": ".",
+            "dockerfilePath": "./Dockerfile"
+          },
+          "healthCheckPath": "",
+          "numInstances": 1,
+          "openPorts": null,
+          "plan": "free",
+          "pullRequestPreviewsEnabled": "no",
+          "region": "singapore",
+          "url": "https://todoapi-8k4o.onrender.com"
+        },
+        "slug": "todoapi-8k4o",
+        "suspended": "not_suspended",
+        "suspenders": [],
+        "type": "web_service",
+        "updatedAt": "2024-03-19T17:11:03.842234Z"
+      }
+    },
+    {
+      "cursor": "5DWxKaeB3xNjOWdsNWVsYzczZm01b24w",
+      "service": {
+        "autoDeploy": "yes",
+        "branch": "main",
+        "createdAt": "2024-03-19T14:50:14.484421Z",
+        "id": "srv-cnsqc9gl5elc73fm5on0",
+        "name": "praktyKod5",
+        "notifyOnFail": "default",
+        "ownerId": "usr-cnrjfr8l5elc73b27qq0",
+        "repo": "https://github.com/nechamiR/praktyKod5",
+        "rootDir": "./ToDoListReact-master",
+        "serviceDetails": {
+          "buildCommand": "npm run build",
+          "buildPlan": "starter",
+          "publishPath": "build",
+          "pullRequestPreviewsEnabled": "no",
+          "url": "https://praktykod5.onrender.com"
+        },
+        "slug": "praktykod5",
+        "suspended": "not_suspended",
+        "suspenders": [],
+        "type": "static_site",
+        "updatedAt": "2024-03-31T14:27:56.709404Z"
+      }
+    }
+  ]
